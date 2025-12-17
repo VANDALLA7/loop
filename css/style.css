@@ -23,6 +23,22 @@ main{
     
     margin: 0 auto;
 }
+header{
+    min-height:800px;
+    background-color: #F9F6F1;
+
+
+}
+/*--------------------------Header menu section-------------------------*/
+.header-menu{
+    min-height: 90px;
+}
+
+.section__wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
 
 /*------------------------Section delivery----------------------------*/
 .delivery{
@@ -52,6 +68,49 @@ main{
     flex-direction: row;
 
 }
+.man-woman{
+    background: linear-gradient(90deg, #F9F6F1 0%, #F9F6F1 50%, #F9E0E0 50%, #F9E0E0 100%);
+}
 .man,.woman{
     width: 50%;
+    padding-top: 60px;
+    padding-bottom: 58px;
+}
+
+.man{
+    background: url(../img/man.png) no-repeat;
+    background-position-x: right ;
+    background-position-y: bottom;
+
+}
+.woman{
+    
+    padding-left: 36px;
+    background: url(../img/woman.png) no-repeat;
+    background-position-x: right ;
+    background-position-y: bottom;
+}
+
+
+.man-woman h2{
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.man-woman h2 span{
+    font-weight: normal;
+}
+.man-woman p{
+    font-weight: 300;
+}
+.man-woman a{
+    display: flex;
+    background: #D7B399;
+    width: 80px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.man-woman a:hover{
+    background: #29221e;
 }
