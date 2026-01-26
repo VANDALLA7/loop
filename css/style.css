@@ -20,7 +20,7 @@ main{
 
 .container{
     max-width: 1110px;
-    
+    position: relative;
     margin: 0 auto;
 }
 header{
@@ -31,15 +31,172 @@ header{
 }
 /*--------------------------Header menu section-------------------------*/
 .header-menu{
+    
     min-height: 90px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #F9F6F1;
+    
+}
+.banner{
+    display: block;
+    margin-top: 90px;
+    
+    
 }
 
 .section__wrapper{
     display: flex;
     flex-direction: row;
+    gap: 30px;
+    min-height: 80px;
+    align-items: center;
+}
+.header-menu ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+ul{
+    list-style: none;
+    font-size: 14px;
+    
 }
 
 
+.mainmenu__item{
+    
+    margin-right: 30px;
+    flex-shrink: 0;
+    color: #000;
+    align-items: center;
+}
+.menu__link{
+    
+    color: #000;
+    text-decoration: none;
+}
+
+.logo{
+    margin-left: 91px;
+    margin-right: 90px;
+    
+}
+.backet__link img{
+    margin-right: 15px;
+    
+}
+/*-----------------------------Section banner------------------------------*/
+
+.slider__item{
+    min-height: 564px;
+    background:url(../img/running_shoes_PNG5823.png) no-repeat right center;
+    display: flex;
+}
+
+.slider__item{
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background: url(../img/running_shoes_PNG5823.png) no-repeat right center;
+
+}
+
+.slider__text{
+    font-size: 30px;
+    margin-bottom: 36px;
+}
+
+.slider__big-text{
+    font-family: "montserrat", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 55px;
+}
+
+.button{
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #D7B399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 54px;
+}
+
+.slider__item-price{
+    font-family: "montserrat", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.slider__price--old{
+    font-size: 24px;
+    text-decoration-line: line-through;
+    margin-bottom: 14px;
+}
+
+.slider__price--new{
+    font-size: 42px;
+    color: #d84033;
+    
+}
+
+.section__wrapper{
+    position: relative;
+}
+.slider__button{
+    position: absolute;
+    top: 50%;
+    border: none;
+    background:none;
+}
+.slider__button:hover{
+    color: #29221e ;
+}
+.slider__button--prev{
+    left: -100px;
+}
+.slider__button--next{
+    right: -100px;
+}
+/*------------------------Section Dress---------------------------------*/
+
+.dress__wrapper{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.dress__item{
+    width: 277px;
+    
+    text-align: right;
+    
+    
+}
+.dress__item img{
+    width: 55%;
+    
+    
+}
+.dress__item-cream{
+    background: #f9f6f1;
+}
+.dress__item-grey{
+    background: #f4f4f4;
+}
+.dress__item-text{
+    text-align: left;
+}
 /*------------------------Section delivery----------------------------*/
 .delivery{
     background: #212121;
@@ -113,4 +270,61 @@ header{
 }
 .man-woman a:hover{
     background: #29221e;
+}
+
+/*-----------------------------Section new-------------------------------*/
+
+.new .container{
+    padding-top: 193px;
+    padding-bottom: 107px;
+    text-align: center;
+}
+
+.new h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    
+}
+.new button{
+    width: 220px;
+    height: 55px;
+    background: #D7B399;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+}
+.new button:hover, .new button:focus{
+    background: #29221e;
+}
+.catalog{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.card img{
+    width: 85%;
+    margin-bottom: 25px;
+}
+.card{
+    border: #D7B399 1px solid;
+    width: 22%;
+    min-height: 350px;
+    padding: 22px 0 25px;
+    
+}
+.card h3{
+    font-size: 14px;
+    font-weight: bold;
+
+}
+.card-price{
+    font-size: 18px;
+    color: #D7B399;
+    font-weight: bold;
+    margin-top: 15px;
 }
