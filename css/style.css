@@ -13,6 +13,7 @@ body{
     display: flex;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
+    min-width: 320px;
 }
 main{
     flex-grow: 1;
@@ -72,11 +73,18 @@ ul{
     flex-shrink: 0;
     color: #000;
     align-items: center;
+    border: #000 1px solid;
+    border-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .menu__link{
     
     color: #000;
     text-decoration: none;
+}
+.menu__link:hover:focus{
+    color: #535353;
 }
 
 .logo{
@@ -86,6 +94,10 @@ ul{
 }
 .backet__link img{
     margin-right: 15px;
+    
+}
+.navbar-toggler{
+    display: none;
     
 }
 /*-----------------------------Section banner------------------------------*/
@@ -129,6 +141,9 @@ ul{
     text-decoration: none;
     margin-top: 54px;
 }
+.button:hover:focus{
+    background: #29221e;
+}
 
 .slider__item-price{
     font-family: "montserrat", "Arial", sans-serif;
@@ -142,6 +157,7 @@ ul{
     text-decoration-line: line-through;
     margin-bottom: 14px;
 }
+
 
 .slider__price--new{
     font-size: 42px;
@@ -164,8 +180,14 @@ ul{
 .slider__button--prev{
     left: -100px;
 }
+.slider__button--prev:hover:focus{
+    color: #29221e;
+}
 .slider__button--next{
     right: -100px;
+}
+.slider__button--next:hover:focus{
+    color: #29221e;
 }
 /*------------------------Section Dress---------------------------------*/
 
@@ -177,14 +199,18 @@ ul{
     
 }
 .dress__item{
-    width: 277px;
+    width: 25%;
     
-    text-align: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
     
     
 }
 .dress__item img{
     width: 55%;
+    height: 90%;
     
     
 }
@@ -195,7 +221,15 @@ ul{
     background: #f4f4f4;
 }
 .dress__item-text{
-    text-align: left;
+    
+    font-size: 21;
+    font-weight: light;
+    font-family: "montserrat", "Arial", sans-serif;
+    left: 30px;
+    bottom: 24px;
+    position: absolute;
+    text-transform: uppercase;
+    
 }
 /*------------------------Section delivery----------------------------*/
 .delivery{
@@ -328,3 +362,127 @@ ul{
     font-weight: bold;
     margin-top: 15px;
 }
+
+
+/*--------------------------*/
+@media(max-width:1326px){
+    .slider__button--prev{
+        left: 0;
+    }
+    .slider__button--next{
+        right: 0;
+    }
+}
+@media(max-width:1110px){
+    .container{
+        width: auto;
+        padding: 0 30px;
+    }
+    .dress__item{
+        width: 25%;
+    }
+
+}
+@media(max-width:992px){
+    .catalog{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 35%;
+    }
+    .menu__wrapper{
+        flex-wrap: wrap;
+    }
+    .logo{
+        order: -1;
+        width: 100%;
+    }
+}
+@media(max-width:768px){
+    .man-woman .container{
+        flex-direction: column;
+    }
+    .man, .woman{
+        width: 100%;
+    }
+    .man{
+        padding-left: 35px;
+    }
+    .man-woman{
+    background: linear-gradient(180deg, #F9F6F1 0%, #F9F6F1 50%, #F9E0E0 50%, #F9E0E0 100%);
+    }
+    .card{
+        width: 40%;
+    }
+    .slider__wrapper{
+        display: none;
+    }
+    .slider__button{
+        display: none;
+    }
+    .header{
+        min-height: 90px;
+    }
+    .logo{
+        order: -1;
+        width: 70%;
+    }
+    .basket{
+        order: -1;
+        text-align: right;
+    }
+    .dress__item{
+        width:33% ;
+    }
+    .man-woman a{
+        height: 44px;
+    }
+
+}
+@media(max-width:600px){
+    .basket, .menu{
+        display: none;
+        width: 100%;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .mainmenu__list{
+        flex-direction: column;
+    }
+
+}
+.show{
+    display: block;
+}
+@media(max-width:576px){
+    .card{
+        width: 90%;
+    }
+    .new .container{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .catalog{
+        margin-top: 50px;
+    }
+    .dress__item{
+        width:50% ;
+    }
+}
+@media(max-width:320px){
+    .dress__item{
+        width:100% ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

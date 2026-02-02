@@ -13,12 +13,16 @@
 <body>
     <header class="header">
         <section class="section header-menu">
-            <div class="section__wrapper container">
+            <div class="section__wrapper container menu__wrapper">
+                <button class="navbar-toggler" id="navbar-toggler" type="button">
+                    <img src="img/bars-solid-full.svg" width="30px">
+
+                </button>
                 <div class="menu">
                     <ul class="mainmenu__list">
-                        <li class="mainmenu__item"><a class="menu__link" href="#">для мужчин</a></li>
-                        <li class="mainmenu__item"><a class="menu__link" href="#">для женщин</a></li>
-                        <li class="mainmenu__item"><a class="menu__link" href="#">для детей</a></li>
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для мужчин</a></li>
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для женщин</a></li>
+                        <li class="mainmenu__item"><a class="menu__link" href="#">Для детей</a></li>
                     </ul>
                 </div>
                 <div class="logo">
@@ -179,5 +183,15 @@
             </div>
         </section>
     </footer>
+    <script type="text/javascript">
+        const btn = document.getElementById("navbar-toggler");
+        const menus =  document.querySelectorAll(".menu");
+        btn.addEventListener('click', () => {
+            for (let el of menus){
+                el.classList.toggle("show");
+            }
+        })
+
+    </script>
 </body>
 </html>
