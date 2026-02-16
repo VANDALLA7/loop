@@ -54,6 +54,7 @@ header{
     gap: 30px;
     min-height: 80px;
     align-items: center;
+    justify-content: space-between;
 }
 .header-menu ul{
     display: flex;
@@ -87,11 +88,6 @@ ul{
     color: #535353;
 }
 
-.logo{
-    margin-left: 91px;
-    margin-right: 90px;
-    
-}
 .backet__link img{
     margin-right: 15px;
     
@@ -447,8 +443,9 @@ ul{
     .navbar-toggler{
         display: block;
     }
-    .mainmenu__list{
+    .header-menu ul{
         flex-direction: column;
+        gap: 5px;
     }
 
 }
@@ -469,6 +466,7 @@ ul{
     .dress__item{
         width:50% ;
     }
+    
 }
 @media(max-width:320px){
     .dress__item{
